@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     handlerFn() {
-      this.$axios.get("http://localhost:7723/putTime").then(res => {
+      this.$axios.get("putTime").then(res => {
         if (res.data.success) {
           this.isSuccess = true;
           setTimeout(() => {

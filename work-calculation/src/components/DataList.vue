@@ -96,7 +96,7 @@ export default {
     }
   },
   mounted() {
-    this.$axios.get("http://localhost:7723/allData").then(res => {
+    this.$axios.get("/allData").then(res => {
       console.log("res.data.dataList-->", res.data.dataList);
       if (res.data && Array.isArray(res.data.dataList)) {
         this.oDataList = res.data.dataList.slice(0);
